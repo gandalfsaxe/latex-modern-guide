@@ -92,7 +92,7 @@ allowlitunits]            % --- units directly in mathmode e.g. 20\milli\meter w
 \usepackage{multicol}         % Easily switch to multiple columns mid-document.
 \usepackage{isodate}          % Many date formats, e.g ensure \today is is ISO (YYYY-MM-DD)
 \usepackage{amsthm}           % Makes available the commands \proof,\qedsymbol and \theoremstyle.
-\RequirePackage[l2tabu, orthodox]{nag}  % Load before \documentclass command. Checks for obsolete LaTeX packages and outdated commands.
+\RequirePackage[l2tabu, orthodox]{nag}  % Checks for obsolete LaTeX packages and outdated commands.
 \usepackage{fancyhdr}         % Full control over Control header, footer, page numbers etc.
 \usepackage{empheq}           % EMPHasizing EQuations. Boxes around (multi-line) equations.
 \usepackage{enumitem}         % Customized enumerated lists.
@@ -112,6 +112,8 @@ The easy way to control paragraph indentation is with the `parskip` package. If 
 ### Import Order
 
 `hypperref` needs to be loaded before some, [after other packages](https://tex.stackexchange.com/questions/1863/which-packages-should-be-loaded-after-hyperref-instead-of-before).
+
+`nag` must be loaded before \documentclass command. 
 
 Note that from the `AMS-LaTeX Bundle`, only three packages have to be loaded explicitly: `amsmath`, `amssym` and `amsthm`. All else is loaded automatically from those three.[^ams-dependency]
 
