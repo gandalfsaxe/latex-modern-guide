@@ -125,7 +125,7 @@ Note that from the `AMS-LaTeX Bundle`, only three packages have to be loaded exp
 
 ### Draws
 
-#### Code syntax highlighting: `lstlisting` and `minted` vs. `pandoc
+#### Code syntax highlighting: `lstlisting` and `minted` vs. `pandoc`
 
 Source code syntax highlighting is the only package where I choose to import two packages that does exactly the same things.
 
@@ -239,7 +239,7 @@ Do not use with `XeLaTeX` and `LuaTeX`.
 With `\usepackage[utf8]{inputenc}`:
 
 <img src="assets/image-20180609093429497.png" style="zoom:50%">
-  
+
 Without `\usepackage[utf8]{inputenc}`:
 
 <img src="assets/image-20180609093512969.png" style="zoom:50%">
@@ -1193,7 +1193,7 @@ Based on [^inline-math], [^display-math] and [^math-notation].
 | Display    | `\[...\]` | `LaTeX` | `\begin{displaymath}` | `\begin{equation*}` [^ams-display] | It's a good habit to put each of these pairs on a line by itself. Though TeX doesn't care, this makes displays stand out visually and makes editing and revising the tex file easier. |
 |            |           |         |                         |                            |                                                                                                                                                                                       |
 
-#### Inline `$...$` vs. `\(...\)` discussion
+#### Inline `$...####  vs. `\(...\)` discussion
 
 See [this](https://tex.stackexchange.com/questions/510/are-and-preferable-to-dollar-signs-for-math-mode) discussion.
 Principally  `\(...\)`  is the real LaTeX syntax one should use.
