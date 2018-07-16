@@ -113,7 +113,7 @@ The easy way to control paragraph indentation is with the `parskip` package. If 
 
 `hypperref` needs to be loaded before some, [after other packages](https://tex.stackexchange.com/questions/1863/which-packages-should-be-loaded-after-hyperref-instead-of-before).
 
-`nag` must be loaded before `\documentclass` command using 'RequirePackage'.
+`nag` must be loaded before `\documentclass` command using `RequirePackage`.
 
 Note that from the `AMS-LaTeX Bundle`, only three packages have to be loaded explicitly: `amsmath`, `amssym` and `amsthm`. All else is loaded automatically from those three.[^ams-dependency]
 
