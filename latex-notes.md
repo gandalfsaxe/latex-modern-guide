@@ -38,6 +38,7 @@ If just using `LaTeX` without `pandoc`, simply remove all `%P` from the preamble
 \usepackage{xcolor}         % More colors, easily user defined colors, color boxes.
 %P \usepackage{ulem}        % Allows strikeout text via \sout{}, and various underlining.
 \usepackage{parskip}        % Set paragraph indent zero and vertical space increased.
+\usepackage{csquotes}       % Recommended with biblatex so quotations are typeset right.
 
 %%% Linking and referencing %%%
 %P \usepackage[
@@ -472,6 +473,23 @@ simply by issuing the appropriate command.
 ```
 
 Without `\usepackage{parskip}`:
+
+### csquotes
+
+Using biblatex with default settings without this gives a warning. When using babel or polyglossia with biblatex, loading csquotes is recommended to ensure that quoted texts are typeset according to the rules of your main language.[^csquotes]
+
+`csquotes` is also good for quoting in foreign languages.[^csquotes2]
+
+Supports commands such as `\MakeAutoQuote` that makes all ordinary quotes into `\enquote` (which is basically allows proper nested quotes).
+
+Most commands on `csquote` is context sensitive. For example, `blockquote` will make quotation inline or display depending on length of text:
+
+> This command determines the length of the text. If the length exceeds a certain threshold, the text will be typeset in display mode, i. e., as a block quotation. If not, `\blockquote` will behave like `\textquote`. [^csquotes-doc]
+
+For example of use see also [How to quote correctly with csquotes?](https://tex.stackexchange.com/questions/103445/how-to-quote-correctly-with-csquotes) and [Sharelatex: Typesetting quotations](https://www.sharelatex.com/learn/Typesetting_quotations).
+
+* <https://ctan.org/pkg/csquotes?lang=en>
+* <http://mirrors.dotsrc.org/ctan/macros/latex/contrib/csquotes/csquotes.pdf>
 
 ## Graphics
 
@@ -2296,3 +2314,6 @@ Personal opinion: Use `LaTeX2e` and wait for `LaTeX3` (could take ages though), 
 [^sharelatex-listings-theme]: <https://www.sharelatex.com/learn/Code_listing#Code_styles_and_colours>
 [^parskip]: <https://tex.stackexchange.com/a/40432>
 [^mathjax-colors]: <https://github.com/mathjax/MathJax/issues/2013>
+[^csquotes]: https://tex.stackexchange.com/questions/229638/package-biblatex-warning-babel-polyglossia-detected-but-csquotes-missing
+[^csquotes2]: https://tex.stackexchange.com/questions/39285/whats-the-advantage-of-using-csquotes-over-using-an-editors-auto-replacement-f
+[^csquotes-doc]: https://mirror.hmc.edu/ctan/macros/latex/contrib/csquotes/csquotes.pdf
