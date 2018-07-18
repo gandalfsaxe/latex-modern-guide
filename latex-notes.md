@@ -427,6 +427,10 @@ where $q$ and $p$ are the generalized coordinates and impulses from Hamiltonian 
 This is not colored text either.
 ```
 
+This is currently not compatible with pandoc, see [Coloring text in LaTeX](#coloring-text-in-latex).
+
+
+
 It's also possible get have colorful equations, see guide in [colorful equations](#colorful-equations).
 
 * <https://ctan.org/pkg/xcolor?lang=en>
@@ -2149,6 +2153,10 @@ Works in pandoc conversion, doesn't work
   \def\sc#1{\dosc#1\csod}
   \def\dosc#1#2\csod{{\rm #1{\small #2}}}
   ```
+
+## Coloring text in LaTeX
+
+See discussion at [pandoc-discuss](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/pandoc-discuss/m5zNI4h9xoo/w1xjWLCqCAAJ) and [pandoc-latex-color issue](https://github.com/chdemko/pandoc-latex-color/issues/1). This I have an idea of how to fix, but author of `pandoc-latex-color` wasn't helpful. But I do have a [half-done fork](https://github.com/gandalfsaxe/pandoc-latex-color) that I could try to finish at some point.
 
 # General LaTeX Guides
 
