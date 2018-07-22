@@ -1207,13 +1207,13 @@ Quick-Guide:
 
 Based on [^inline-math], [^display-math] and [^math-notation].
 
-| Math Style | Notation  | Origins | Short form of           | `amsmath` redefines it to | Comment                                                                                                                                                                               |
-| ---------- | --------- | ------- | ----------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Inline     | `$...$`   | `TeX`   |                         |                            | Still widely used. Use in Typora (for live preview). May be unsupported in LaTeX3. I sometimes use it in nested environments, see [piecewise functions](#piecewise-functions)         |
-| Inline     | `\(...\)` | `LaTeX` |                         |                            | Use in pure LaTeX                                                                                                                                                                     |
-| Display    | `$$...$$` | `TeX`   |                         |                            | No reason to use. Can give inconsistent spacing.[^tex-$$] May be unsupported in LaTeX3. Use either `\[...\]` or an `amsmath` environment.                                             |
+| Math Style | Notation  | Origins | Short form of         | `amsmath` redefines it to          | Comment                                                                                                                                                                               |
+| ---------- | --------- | ------- | --------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Inline     | `$...$`   | `TeX`   |                       |                                    | Still widely used. Use in Typora (for live preview). May be unsupported in LaTeX3. I sometimes use it in nested environments, see [piecewise functions](#piecewise-functions)         |
+| Inline     | `\(...\)` | `LaTeX` |                       |                                    | Use in pure LaTeX                                                                                                                                                                     |
+| Display    | `$$...$$` | `TeX`   |                       |                                    | No reason to use. Can give inconsistent spacing.[^tex-$$] May be unsupported in LaTeX3. Use either `\[...\]` or an `amsmath` environment.                                             |
 | Display    | `\[...\]` | `LaTeX` | `\begin{displaymath}` | `\begin{equation*}` [^ams-display] | It's a good habit to put each of these pairs on a line by itself. Though TeX doesn't care, this makes displays stand out visually and makes editing and revising the tex file easier. |
-|            |           |         |                         |                            |                                                                                                                                                                                       |
+|            |           |         |                       |                                    |                                                                                                                                                                                       |
 
 #### Inline `$...####  vs. `\(...\)` discussion
 
@@ -1251,14 +1251,14 @@ Inspired by[^sharelatex-amsmath] and [^env-difference].
 
 #### Environments table overview
 
-| Environment        | Description                                                  |                                                              |
-| ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Environment        | Description                                                                    |                                                                 |
+| ------------------ | ------------------------------------------------------------------------------ | --------------------------------------------------------------- |
 | **equation**       | A single equation, single line (a little more compact than `align` space-wise) | <img src="assets/image-20180626164321108.png" style="zoom:15%"> |
-| **equation-split** | Multiple lines, one centered label.                          | <img src="assets/image-20180623113008211.png" style="zoom:15%"> |
-| **align**          | Multiple lines, multiple alignment points.                   | <img src="assets/image-20180626165032383.png" style="zoom:15%"> |
-| **gather**         | Multiple lines of equations all centered with no alignment.  | <img src="assets/image-20180623112932276.png" style="zoom:15%"> |
-| **multline**       | Long equations split over multiple lines, left then right alignment. | <img src="assets/image-20180623113601807.png" style="zoom:15%"> |
-| **flalign**        | Two sets of equations, first left-aligned, second right-aligned. | <img src="assets/image-20180626170954133.png" style="zoom:15%"> |
+| **equation-split** | Multiple lines, one centered label.                                            | <img src="assets/image-20180623113008211.png" style="zoom:15%"> |
+| **align**          | Multiple lines, multiple alignment points.                                     | <img src="assets/image-20180626165032383.png" style="zoom:15%"> |
+| **gather**         | Multiple lines of equations all centered with no alignment.                    | <img src="assets/image-20180623112932276.png" style="zoom:15%"> |
+| **multline**       | Long equations split over multiple lines, left then right alignment.           | <img src="assets/image-20180623113601807.png" style="zoom:15%"> |
+| **flalign**        | Two sets of equations, first left-aligned, second right-aligned.               | <img src="assets/image-20180626170954133.png" style="zoom:15%"> |
 
 #### equation
 
