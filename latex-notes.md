@@ -1508,7 +1508,7 @@ f(x) =& x^2\qquad +3x\qquad +2
 
 ##### 👍`\boxed` (Works in Typora)
 
-Can be done with `\boxed` from `mathsmath`:
+Can be done with `\boxed` from `amsmath`:
 
 ```latex
 \boxed{ i \hbar \frac{\partial}{\partial t}\vert\Psi(\mathbf{r},t)\rangle = \hat H\vert\Psi(\mathbf{r},t)\rangle }
