@@ -448,7 +448,7 @@ The `ulem` package provides various types of underlining that can stretch betwee
 
 ## parskip
 
-By simply loading this package, then instead of adjusting manually, it alters the
+By simply loading this package, then instead of adjusting manually, it alters the:
 
 1. `\parindent` to zero
 2. `\parskip` increased slightly from default which often looks a little better.
@@ -476,7 +476,11 @@ simply by issuing the appropriate command.
 \end{document}
 ```
 
+<img src="assets/image-20180723094740420.png" style="zoom:25%">
+
 Without `\usepackage{parskip}`:
+
+<img src="assets/image-20180723094929868.png" style="zoom:25%">
 
 ### csquotes
 
@@ -1215,7 +1219,7 @@ Based on [^inline-math], [^display-math] and [^math-notation].
 | Display    | `\[...\]` | `LaTeX` | `\begin{displaymath}` | `\begin{equation*}` [^ams-display] | It's a good habit to put each of these pairs on a line by itself. Though TeX doesn't care, this makes displays stand out visually and makes editing and revising the tex file easier. |
 |            |           |         |                       |                                    |                                                                                                                                                                                       |
 
-#### Inline `$...$` vs. `\(...\)` discussion
+#### Inline `$...####  vs. `\(...\)` discussion
 
 See [this](https://tex.stackexchange.com/questions/510/are-and-preferable-to-dollar-signs-for-math-mode) discussion.
 Principally  `\(...\)`  is the real LaTeX syntax one should use.
