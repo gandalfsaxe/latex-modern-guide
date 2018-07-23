@@ -1524,9 +1524,9 @@ For multi-line boxed equations, use `empheq`  that depends on `mathtools` and is
 
 ```latex
 \begin{empheq}[innerbox=\fbox,
-               left=L\Rightarrow]{align}
+left=L\Rightarrow]{align}
 a&=b\\
-  E&=mc^2 + \int_a^a x\, dx
+E&=mc^2 + \int_a^a x\, dx
 \end{empheq}
 ```
 
